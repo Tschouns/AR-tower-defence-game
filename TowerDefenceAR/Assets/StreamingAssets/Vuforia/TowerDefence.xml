@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="image-target-original-defence" size="0.150000 0.148221" />
+    <ImageTarget name="image-target-original-obstacle" size="0.150000 0.146971" />
+    <ImageTarget name="image-target-original-spawn-point" size="0.150000 0.155419" />
+    <ImageTarget name="image-target-original-tower" size="0.150000 0.147043" />
+    <ImageTarget name="image-target-obstacle-4" size="0.130000 0.130000" />
+    <ImageTarget name="image-target-obstacle-3" size="0.130000 0.130000" />
+    <ImageTarget name="image-target-obstacle-2" size="0.130000 0.130000" />
+    <ImageTarget name="image-target-obstacle-1" size="0.130000 0.130000" />
+    <ImageTarget name="image-target-defence-4" size="0.130000 0.130000" />
+    <ImageTarget name="image-target-defence-3" size="0.130000 0.130000" />
+    <ImageTarget name="image-target-defence-2" size="0.130000 0.130000" />
+    <ImageTarget name="image-target-defence-1" size="0.130000 0.130000" />
+    <ImageTarget name="image-target-obstacle" size="0.150000 0.150000" />
+    <ImageTarget name="image-target-defence" size="0.130000 0.130000" />
+    <ImageTarget name="image-target-spawn-point" size="0.130000 0.130000" />
+    <ImageTarget name="image-target-tower" size="0.130000 0.130000" />
+  </Tracking>
+</QCARConfig>
