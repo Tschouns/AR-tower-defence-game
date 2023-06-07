@@ -1,3 +1,4 @@
+using Assets.Scripts.Helpers;
 using UnityEngine;
 using UnityEngine.Assertions;
 using Vuforia;
@@ -5,6 +6,7 @@ using Vuforia;
 namespace Assets.Scripts.Building
 {
     [RequireComponent(typeof(ImageTargetBehaviour))]
+    [RequireComponent(typeof(GameTimer))]
     public class BuilderCard : DefaultObserverEventHandler, IBuilderCard
     {
         [SerializeField]
@@ -16,10 +18,8 @@ namespace Assets.Scripts.Building
         [SerializeField]
         private GameObject groundIndicatorPrefab;
 
+        private GameTimer timer;
         private GameObject groundIndicator;
-
-        private bool isTracking = false;
-        private float? trackingSince = null;
 
         private Vector3 buildingPosition;
         private Quaternion buildingRotation;
@@ -31,8 +31,7 @@ namespace Assets.Scripts.Building
             base.OnTrackingFound();
             Debug.Log("Now tracking...", this);
 
-            isTracking = true;
-            trackingSince = Time.time;
+            timer.IsActive = true;
         }
 
         protected override void OnTrackingLost()
@@ -40,14 +39,17 @@ namespace Assets.Scripts.Building
             base.OnTrackingLost();
             Debug.Log("Lost tracking...", this);
 
-            isTracking = false;
-            trackingSince = null;
+            timer.IsActive = false;
+            timer.Reset();
         }
 
         private void Awake()
         {
             Assert.IsNotNull(objectToBuildPrefab, "A prefab must be assigned as \"Object To Build\".");
             Assert.IsNotNull(groundIndicatorPrefab, "A prefab must be assigned as \"Ground Indicator\".");
+
+            timer = GetComponent<GameTimer>();
+            Assert.IsNotNull(timer, "The game timer component was not found.");
 
             groundIndicator = Instantiate(groundIndicatorPrefab, transform);
             groundIndicator.SetActive(false);
@@ -61,8 +63,7 @@ namespace Assets.Scripts.Building
                 return;
             }
 
-            if (isTracking &&
-                Time.time - trackingSince > timeToBuild)
+            if (timer.IsDurationReached)
             {
                 Instantiate(objectToBuildPrefab, buildingPosition, buildingRotation);
                 HasBuilt = true;
@@ -76,7 +77,7 @@ namespace Assets.Scripts.Building
 
         private void DisplayGroundIndicator()
         {
-            if (!isTracking)
+            if (!timer.IsActive)
             {
                 groundIndicator.SetActive(false);
                 return;
@@ -85,7 +86,8 @@ namespace Assets.Scripts.Building
             // Try project the card's position onto the ground.
             var referencePoint = transform.position + Vector3.up;
 
-            if (Physics.Raycast(referencePoint, Vector3.down, out var hit, 10))
+            var hits = Physics.RaycastAll(referencePoint, Vector3.down, 10);
+            foreach (var hit in hits)
             {
                 if (hit.collider.GetComponentInParent<Ground>() != null)
                 {
