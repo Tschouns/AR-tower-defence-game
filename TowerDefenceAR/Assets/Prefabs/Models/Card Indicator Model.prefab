@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 9106326666730541563}
   - component: {fileID: 7643509509922536441}
   - component: {fileID: 540829811059788571}
-  - component: {fileID: 8598076454299792027}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CubeZ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,27 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8598076454299792027
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1439833161493482649}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3268131887590818896
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,8 +94,7 @@ GameObject:
   - component: {fileID: 3202145115073584823}
   - component: {fileID: 5760538640452525621}
   - component: {fileID: 6718242810832293899}
-  - component: {fileID: 2095251248300687945}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CubeX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,27 +166,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2095251248300687945
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3268131887590818896}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6041746257984379527
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7769520651553523190}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Card Indicator Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,8 +212,7 @@ GameObject:
   - component: {fileID: 1304009438815612450}
   - component: {fileID: 8345557950040280941}
   - component: {fileID: 8968666280919914148}
-  - component: {fileID: 2264490898783739678}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CubeX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,27 +284,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2264490898783739678
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6591598063837922647}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8176170443782929318
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,8 +295,7 @@ GameObject:
   - component: {fileID: 45340521853913729}
   - component: {fileID: 3354991904016149152}
   - component: {fileID: 9169054052955510768}
-  - component: {fileID: 866215085773399437}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CubeZ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,24 +367,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &866215085773399437
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8176170443782929318}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}

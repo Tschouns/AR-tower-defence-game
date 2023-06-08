@@ -12,6 +12,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 235aa806917f2574995dcf0a86f93fce, type: 2}
+    - target: {fileID: 78904363215332805, guid: bbba456a6017db4429c05a2b6266d086, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564907452329159617, guid: bbba456a6017db4429c05a2b6266d086, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753047001571234371, guid: bbba456a6017db4429c05a2b6266d086, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6829641515155354146, guid: bbba456a6017db4429c05a2b6266d086, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -62,7 +74,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 235aa806917f2574995dcf0a86f93fce, type: 2}
     - target: {fileID: 7697275686623232730, guid: bbba456a6017db4429c05a2b6266d086, type: 3}
       propertyPath: m_Name
-      value: Dummy Building Model Transparent
+      value: Dummy Building Model - Transparent
+      objectReference: {fileID: 0}
+    - target: {fileID: 7697275686623232730, guid: bbba456a6017db4429c05a2b6266d086, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8565127637145199477, guid: bbba456a6017db4429c05a2b6266d086, type: 3}
       propertyPath: m_Materials.Array.data[0]
