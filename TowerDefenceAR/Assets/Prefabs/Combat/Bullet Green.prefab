@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 5603842742859507441}
   - component: {fileID: 4926131951344352440}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: Bullet Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 3
-  energy: 10
+  energy: 100
 --- !u!114 &4926131951344352440
 MonoBehaviour:
   m_ObjectHideFlags: 0

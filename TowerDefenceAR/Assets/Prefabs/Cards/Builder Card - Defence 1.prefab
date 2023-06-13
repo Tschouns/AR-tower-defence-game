@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1449694993014259573, guid: 3973b697330e97840927a04801e45fd3, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1449694993014259573, guid: 3973b697330e97840927a04801e45fd3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -95,6 +95,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7397990525275190338, guid: 3973b697330e97840927a04801e45fd3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4290127437768217365}
+    - targetCorrespondingSourceObject: {fileID: 7397990525275190338, guid: 3973b697330e97840927a04801e45fd3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3908887195970337895}
+    - targetCorrespondingSourceObject: {fileID: 7397990525275190338, guid: 3973b697330e97840927a04801e45fd3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5480711960659380992}
   m_SourcePrefab: {fileID: 100100000, guid: 3973b697330e97840927a04801e45fd3, type: 3}
 --- !u!1 &2057605118875020710 stripped
 GameObject:
@@ -139,6 +145,30 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 4078048870756971052}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &3908887195970337895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057605118875020710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764b1d8ea58950845b419a77e013c9e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5480711960659380992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057605118875020710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7b2d04d8894454382a5ecac9b1f6f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4078048870756971052 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4808936260826524616, guid: 3973b697330e97840927a04801e45fd3, type: 3}

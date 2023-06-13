@@ -1,0 +1,614 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2487595154177823653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5710013565524494881}
+  - component: {fileID: 1711205447645092548}
+  m_Layer: 0
+  m_Name: Tank Gun Turret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5710013565524494881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2487595154177823653}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3342277757291005662}
+  - {fileID: 2956827772563470378}
+  - {fileID: 4175355848466793221}
+  m_Father: {fileID: 0}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1711205447645092548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2487595154177823653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d467db5a683b2ef49a75e00c2ef771ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunTower: {fileID: 8126010415930378476}
+  rotationVelocity: 100
+--- !u!1 &3983562837871313818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3530091961366197338}
+  m_Layer: 0
+  m_Name: Bullet Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3530091961366197338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3983562837871313818}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2923456417736834135}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5777265390732236521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4175355848466793221}
+  - component: {fileID: 8126010415930378476}
+  m_Layer: 0
+  m_Name: Gun Tower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4175355848466793221
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5777265390732236521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3517900790634635683}
+  - {fileID: 2079629456619571329}
+  - {fileID: 2923456417736834135}
+  m_Father: {fileID: 5710013565524494881}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8126010415930378476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5777265390732236521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0c82c472e8c60b4aa5a36fcc8bdc0ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gun: {fileID: 2793478972113573796}
+--- !u!1 &6789235649322751449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2923456417736834135}
+  - component: {fileID: 2793478972113573796}
+  - component: {fileID: 7098565518313279594}
+  - component: {fileID: 1645918205358041225}
+  m_Layer: 0
+  m_Name: Gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2923456417736834135
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6789235649322751449}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.01, z: 0.024}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3530091961366197338}
+  - {fileID: 1796947821213096008}
+  - {fileID: 5400506584631572292}
+  m_Father: {fileID: 4175355848466793221}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2793478972113573796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6789235649322751449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3367c0d44705dea4e9d50b0af7116056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 331969842324855504, guid: 74296964e4fdc2b4c8cc7a712ac99f3f, type: 3}
+  bulletSpawnPoint: {fileID: 3530091961366197338}
+  coolDownTime: 3
+--- !u!114 &7098565518313279594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6789235649322751449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44dddb8acb060dd4fbe6765e05caa00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealt: 100
+--- !u!114 &1645918205358041225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6789235649322751449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4e4be8090358084b9391f795f770091, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  healthyModel: {fileID: 0}
+  destroyedModel: {fileID: 0}
+--- !u!1001 &1691197017311778952
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2923456417736834135}
+    m_Modifications:
+    - target: {fileID: 6390612764906182700, guid: 3b0de3234f5ffbb43be479e2417cb868, type: 3}
+      propertyPath: m_Name
+      value: Tank Gun Model - Destroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6390612764906182700, guid: 3b0de3234f5ffbb43be479e2417cb868, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740237838174842828, guid: 3b0de3234f5ffbb43be479e2417cb868, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740237838174842828, guid: 3b0de3234f5ffbb43be479e2417cb868, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740237838174842828, guid: 3b0de3234f5ffbb43be479e2417cb868, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740237838174842828, guid: 3b0de3234f5ffbb43be479e2417cb868, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740237838174842828, guid: 3b0de3234f5ffbb43be479e2417cb868, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740237838174842828, guid: 3b0de3234f5ffbb43be479e2417cb868, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740237838174842828, guid: 3b0de3234f5ffbb43be479e2417cb868, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740237838174842828, guid: 3b0de3234f5ffbb43be479e2417cb868, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740237838174842828, guid: 3b0de3234f5ffbb43be479e2417cb868, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740237838174842828, guid: 3b0de3234f5ffbb43be479e2417cb868, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740237838174842828, guid: 3b0de3234f5ffbb43be479e2417cb868, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b0de3234f5ffbb43be479e2417cb868, type: 3}
+--- !u!4 &5400506584631572292 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6740237838174842828, guid: 3b0de3234f5ffbb43be479e2417cb868, type: 3}
+  m_PrefabInstance: {fileID: 1691197017311778952}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2759405044306696355
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2923456417736834135}
+    m_Modifications:
+    - target: {fileID: 4287792055339611915, guid: aced695561ddedd4fabc10fdbb81b227, type: 3}
+      propertyPath: m_Name
+      value: Tank Gun Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287792055339611915, guid: aced695561ddedd4fabc10fdbb81b227, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520324029265199339, guid: aced695561ddedd4fabc10fdbb81b227, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520324029265199339, guid: aced695561ddedd4fabc10fdbb81b227, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520324029265199339, guid: aced695561ddedd4fabc10fdbb81b227, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520324029265199339, guid: aced695561ddedd4fabc10fdbb81b227, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520324029265199339, guid: aced695561ddedd4fabc10fdbb81b227, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520324029265199339, guid: aced695561ddedd4fabc10fdbb81b227, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520324029265199339, guid: aced695561ddedd4fabc10fdbb81b227, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520324029265199339, guid: aced695561ddedd4fabc10fdbb81b227, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520324029265199339, guid: aced695561ddedd4fabc10fdbb81b227, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520324029265199339, guid: aced695561ddedd4fabc10fdbb81b227, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520324029265199339, guid: aced695561ddedd4fabc10fdbb81b227, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aced695561ddedd4fabc10fdbb81b227, type: 3}
+--- !u!4 &1796947821213096008 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4520324029265199339, guid: aced695561ddedd4fabc10fdbb81b227, type: 3}
+  m_PrefabInstance: {fileID: 2759405044306696355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3242140388681042555
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5710013565524494881}
+    m_Modifications:
+    - target: {fileID: 160698111159251998, guid: b1867c6ce7113b44ea2e81ed2f76ed9e, type: 3}
+      propertyPath: m_Name
+      value: Tank Gun Turret Base Model - Destroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 429714093446820433, guid: b1867c6ce7113b44ea2e81ed2f76ed9e, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 429714093446820433, guid: b1867c6ce7113b44ea2e81ed2f76ed9e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429714093446820433, guid: b1867c6ce7113b44ea2e81ed2f76ed9e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429714093446820433, guid: b1867c6ce7113b44ea2e81ed2f76ed9e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429714093446820433, guid: b1867c6ce7113b44ea2e81ed2f76ed9e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 429714093446820433, guid: b1867c6ce7113b44ea2e81ed2f76ed9e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429714093446820433, guid: b1867c6ce7113b44ea2e81ed2f76ed9e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429714093446820433, guid: b1867c6ce7113b44ea2e81ed2f76ed9e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429714093446820433, guid: b1867c6ce7113b44ea2e81ed2f76ed9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429714093446820433, guid: b1867c6ce7113b44ea2e81ed2f76ed9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429714093446820433, guid: b1867c6ce7113b44ea2e81ed2f76ed9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b1867c6ce7113b44ea2e81ed2f76ed9e, type: 3}
+--- !u!4 &2956827772563470378 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 429714093446820433, guid: b1867c6ce7113b44ea2e81ed2f76ed9e, type: 3}
+  m_PrefabInstance: {fileID: 3242140388681042555}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4794521969625109198
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5710013565524494881}
+    m_Modifications:
+    - target: {fileID: 7721416174735708767, guid: c447209390ff5834e8a3898c107892a5, type: 3}
+      propertyPath: m_Name
+      value: Turret Base Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848568801007932432, guid: c447209390ff5834e8a3898c107892a5, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848568801007932432, guid: c447209390ff5834e8a3898c107892a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848568801007932432, guid: c447209390ff5834e8a3898c107892a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848568801007932432, guid: c447209390ff5834e8a3898c107892a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848568801007932432, guid: c447209390ff5834e8a3898c107892a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848568801007932432, guid: c447209390ff5834e8a3898c107892a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848568801007932432, guid: c447209390ff5834e8a3898c107892a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848568801007932432, guid: c447209390ff5834e8a3898c107892a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848568801007932432, guid: c447209390ff5834e8a3898c107892a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848568801007932432, guid: c447209390ff5834e8a3898c107892a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848568801007932432, guid: c447209390ff5834e8a3898c107892a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c447209390ff5834e8a3898c107892a5, type: 3}
+--- !u!4 &3342277757291005662 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7848568801007932432, guid: c447209390ff5834e8a3898c107892a5, type: 3}
+  m_PrefabInstance: {fileID: 4794521969625109198}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5509037045062830252
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4175355848466793221}
+    m_Modifications:
+    - target: {fileID: 4065503605633794529, guid: 65b43a619fb952647b217cbeac47fc4c, type: 3}
+      propertyPath: m_Name
+      value: Tank Gun Tower Model - Destroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811996448141574189, guid: 65b43a619fb952647b217cbeac47fc4c, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811996448141574189, guid: 65b43a619fb952647b217cbeac47fc4c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811996448141574189, guid: 65b43a619fb952647b217cbeac47fc4c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811996448141574189, guid: 65b43a619fb952647b217cbeac47fc4c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811996448141574189, guid: 65b43a619fb952647b217cbeac47fc4c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811996448141574189, guid: 65b43a619fb952647b217cbeac47fc4c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811996448141574189, guid: 65b43a619fb952647b217cbeac47fc4c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811996448141574189, guid: 65b43a619fb952647b217cbeac47fc4c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811996448141574189, guid: 65b43a619fb952647b217cbeac47fc4c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811996448141574189, guid: 65b43a619fb952647b217cbeac47fc4c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811996448141574189, guid: 65b43a619fb952647b217cbeac47fc4c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 65b43a619fb952647b217cbeac47fc4c, type: 3}
+--- !u!4 &2079629456619571329 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5811996448141574189, guid: 65b43a619fb952647b217cbeac47fc4c, type: 3}
+  m_PrefabInstance: {fileID: 5509037045062830252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8146301038132430040
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4175355848466793221}
+    m_Modifications:
+    - target: {fileID: 2962431254802244791, guid: c04bb357058212f478c6cb2f90df2c08, type: 3}
+      propertyPath: m_Name
+      value: Tank Gun Tower Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746619749680571771, guid: c04bb357058212f478c6cb2f90df2c08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746619749680571771, guid: c04bb357058212f478c6cb2f90df2c08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746619749680571771, guid: c04bb357058212f478c6cb2f90df2c08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746619749680571771, guid: c04bb357058212f478c6cb2f90df2c08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746619749680571771, guid: c04bb357058212f478c6cb2f90df2c08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746619749680571771, guid: c04bb357058212f478c6cb2f90df2c08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746619749680571771, guid: c04bb357058212f478c6cb2f90df2c08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746619749680571771, guid: c04bb357058212f478c6cb2f90df2c08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746619749680571771, guid: c04bb357058212f478c6cb2f90df2c08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746619749680571771, guid: c04bb357058212f478c6cb2f90df2c08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746619749680571771, guid: c04bb357058212f478c6cb2f90df2c08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c04bb357058212f478c6cb2f90df2c08, type: 3}
+--- !u!4 &3517900790634635683 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4746619749680571771, guid: c04bb357058212f478c6cb2f90df2c08, type: 3}
+  m_PrefabInstance: {fileID: 8146301038132430040}
+  m_PrefabAsset: {fileID: 0}

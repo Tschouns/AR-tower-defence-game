@@ -1,6 +1,6 @@
 ﻿namespace Assets.Scripts.Enemy
 {
-    public interface IEnemyManager
+    public interface IEnemySpawner
     {
     }
 }

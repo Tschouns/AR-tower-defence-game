@@ -14,6 +14,9 @@ namespace Assets.Scripts.Guns
         private GameObject bulletPrefab;
 
         [SerializeField]
+        private Transform bulletSpawnPoint;
+
+        [SerializeField]
         private float coolDownTime = 3.0f;
 
         public bool IsReady { get; private set; } = true;
@@ -26,7 +29,7 @@ namespace Assets.Scripts.Guns
             }
 
             var bullet = PrepareBullet();
-            bullet.transform.position = transform.position;
+            bullet.transform.position = bulletSpawnPoint.position;
             bullet.transform.rotation = transform.rotation;
 
             // Cooldown.

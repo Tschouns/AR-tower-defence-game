@@ -11,10 +11,9 @@ namespace Assets.Scripts.Guns
         [SerializeField]
         private Gun gun;
 
-        [SerializeField]
-        private float rotationVelocity = 5f;
-
         private Vector3? aimPoint;
+
+        public IGun Gun => gun;
 
         public void AimAt(Vector3? targetPoint)
         {

@@ -1,4 +1,5 @@
 using Assets.Scripts.Helpers;
+using System;
 using UnityEngine;
 using UnityEngine.Assertions;
 using Vuforia;
@@ -10,9 +11,6 @@ namespace Assets.Scripts.Building
     public class BuilderCard : DefaultObserverEventHandler, IBuilderCard
     {
         [SerializeField]
-        private float timeToBuild = 5.0f;
-
-        [SerializeField]
         private GameObject objectToBuildPrefab;
 
         [SerializeField]
@@ -23,6 +21,8 @@ namespace Assets.Scripts.Building
 
         private Vector3 buildingPosition;
         private Quaternion buildingRotation;
+
+        public event Action<GameObject> OnBuilt;
 
         public bool HasBuilt { get; private set; } = false;
 
@@ -65,9 +65,7 @@ namespace Assets.Scripts.Building
 
             if (timer.IsDurationReached)
             {
-                Instantiate(objectToBuildPrefab, buildingPosition, buildingRotation);
-                HasBuilt = true;
-                groundIndicator.SetActive(false);
+                BuildBuilding();
 
                 return;
             }
@@ -105,6 +103,14 @@ namespace Assets.Scripts.Building
 
             // No hit? Deactivate.
             groundIndicator.SetActive(false);
+        }
+
+        private void BuildBuilding()
+        {
+            var building = Instantiate(objectToBuildPrefab, buildingPosition, buildingRotation);
+            groundIndicator.SetActive(false);
+            HasBuilt = true;
+            OnBuilt?.Invoke(building);
         }
     }
 }

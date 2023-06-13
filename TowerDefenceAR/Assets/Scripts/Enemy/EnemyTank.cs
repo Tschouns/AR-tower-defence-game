@@ -1,3 +1,5 @@
+using Assets.Scripts.Battle;
+using Assets.Scripts.Damage;
 using Assets.Scripts.Guns;
 using UnityEngine;
 using UnityEngine.AI;
@@ -6,7 +8,8 @@ using UnityEngine.Assertions;
 namespace Assets.Scripts.Enemy
 {
     [RequireComponent(typeof(NavMeshAgent))]
-    public class EnemyTank : MonoBehaviour, IEnemyTank
+    [RequireComponent(typeof(Health))]
+    public class EnemyTank : MonoBehaviour, IEnemyTank, IUnit
     {
         [SerializeField]
         private GunTurret gunTurret;
@@ -14,10 +17,25 @@ namespace Assets.Scripts.Enemy
         [SerializeField]
         private Gun gun;
 
+        [SerializeField]
+        private float attackRange = 0.4f;
+
+        private IHealth health;
         private NavMeshAgent navAgent;
 
-        private Transform currentTargetOrNull;
+        private Vector3? currentTargetOrNull;
         private Vector3 lastPosition;
+
+        public float AttackRange => attackRange;
+
+        public int AttackPriority => 1;
+
+        public Vector3 Position => transform.position;
+
+        public Vector3 GetAttackPoint()
+        {
+            return transform.position + transform.up * 0.05f;
+        }
 
         public bool SetDestination(Vector3? destination)
         {
@@ -30,7 +48,7 @@ namespace Assets.Scripts.Enemy
             return navAgent.SetDestination(transform.position);
         }
 
-        public void SetAttackTarget(Transform attackTargetOrNull)
+        public void SetAttackTarget(Vector3? attackTargetOrNull)
         {
             currentTargetOrNull = attackTargetOrNull;
         }
@@ -43,13 +61,24 @@ namespace Assets.Scripts.Enemy
 
             navAgent = GetComponent<NavMeshAgent>();
             Assert.IsNotNull(navAgent, "The nav agent component was not found.");
+
+            health = GetComponent<Health>();
+            Assert.IsNotNull(health, "The health component was not found.");
+
+            health.OnDied += () => navAgent.isStopped = true;
+
             lastPosition = transform.position;
         }
 
         private void Update()
         {
+            if (!health.IsAlive)
+            {
+                return;
+            }
+
             CorrectMovementToMimicTankDriving();
-            gunTurret.AimAt(currentTargetOrNull?.position);
+            gunTurret.AimAt(currentTargetOrNull);
 
             gun.Shoot();
         }
