@@ -35,7 +35,7 @@ namespace Assets.Scripts.Defence
 
         private void Update()
         {
-            var enemies = unitProvider.GetEnemyTanks();
+            var enemies = unitProvider.GetAliveEnemyTanks();
 
             if (enemies.Any())
             {

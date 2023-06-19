@@ -13,7 +13,7 @@ namespace Assets.Scripts.Battle
         /// <returns>
         /// All the player units
         /// </returns>
-        IReadOnlyList<IUnit> GetPlayerUnits();
+        IReadOnlyList<IUnit> GetAlivePlayerUnits();
 
         /// <summary>
         /// Gets all the enemy tanks on the battlefield.
@@ -21,6 +21,6 @@ namespace Assets.Scripts.Battle
         /// <returns>
         /// All the enemy tanks
         /// </returns>
-        IReadOnlyList<IUnit> GetEnemyTanks();
+        IReadOnlyList<IUnit> GetAliveEnemyTanks();
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.Building;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Assets.Scripts.Battle
@@ -16,12 +17,12 @@ namespace Assets.Scripts.Battle
         [SerializeField]
         private BuildingUnit[] knownBuildings;
 
-        public IReadOnlyList<IUnit> GetPlayerUnits()
+        public IReadOnlyList<IUnit> GetAlivePlayerUnits()
         {
             return playerUnits;
         }
 
-        public IReadOnlyList<IUnit> GetEnemyTanks()
+        public IReadOnlyList<IUnit> GetAliveEnemyTanks()
         {
             return enemyUnits;
         }
@@ -41,6 +42,20 @@ namespace Assets.Scripts.Battle
             if (knownBuildings != null)
             {
                 Array.ForEach(knownBuildings, playerUnits.Add);
+            }
+        }
+
+        private void Update()
+        {
+            RemoveDeadUnits(playerUnits);
+            RemoveDeadUnits(enemyUnits);
+        }
+
+        private void RemoveDeadUnits(IList<IUnit> units)
+        {
+            foreach (var dead in units.Where(u => !u.IsAlive))
+            {
+                units.Remove(dead);
             }
         }
     }

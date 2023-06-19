@@ -67,7 +67,7 @@ namespace Assets.Scripts.Enemy
                 enemies.Add(tank);
                 enemyUnitRegistry.RegisterEnemyUnit(tank);
 
-                var potentialTargets = unitProvider.GetPlayerUnits();
+                var potentialTargets = unitProvider.GetAlivePlayerUnits();
                 if (potentialTargets.Any())
                 {
                     var target = potentialTargets[Random.Range(0, potentialTargets.Count)];
