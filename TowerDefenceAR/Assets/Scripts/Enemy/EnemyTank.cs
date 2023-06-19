@@ -26,6 +26,7 @@ namespace Assets.Scripts.Enemy
         private Vector3? currentTargetOrNull;
         private Vector3 lastPosition;
 
+        public bool IsAlive => health.IsAlive;
         public float AttackRange => attackRange;
 
         public int AttackPriority => 1;

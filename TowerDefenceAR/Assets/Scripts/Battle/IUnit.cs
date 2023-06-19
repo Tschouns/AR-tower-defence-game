@@ -9,6 +9,11 @@ namespace Assets.Scripts.Battle
     public interface IUnit
     {
         /// <summary>
+        /// Gets a value indicating whether the unit is alive.
+        /// </summary>
+        bool IsAlive { get; }
+
+        /// <summary>
         /// Gets the unit attack priority. Higher means the unit should be attacked first.
         /// </summary>
         int AttackPriority { get; }

@@ -1,8 +1,11 @@
 ﻿using Assets.Scripts.Battle;
+using Assets.Scripts.Damage;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 namespace Assets.Scripts.Building
 {
+    [RequireComponent(typeof(Health))]
     public class BuildingUnit : MonoBehaviour, IUnit
     {
         [SerializeField]
@@ -14,9 +17,13 @@ namespace Assets.Scripts.Building
         [SerializeField]
         private float depthZ = 0.1f;
 
+        private Health health;
+
         public int AttackPriority => 100;
 
         public Vector3 Position => transform.position;
+
+        public bool IsAlive => health.IsAlive;
 
         public Vector3 GetAttackPoint()
         {
@@ -30,6 +37,12 @@ namespace Assets.Scripts.Building
                 (transform.forward * zOffset).z);
 
             return transform.position + relativeAttackPoint;
+        }
+
+        private void Awake()
+        {
+            health = GetComponent<Health>();
+            Assert.IsNotNull(health);
         }
     }
 }

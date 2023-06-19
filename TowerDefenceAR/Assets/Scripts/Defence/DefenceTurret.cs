@@ -17,6 +17,7 @@ namespace Assets.Scripts.Defence
         private IUnit buildingUnit;
         private IUnit attackTargetUnit;
 
+        public bool IsAlive => health.IsAlive;
         public int AttackPriority => buildingUnit.AttackPriority;
         public Vector3 Position => buildingUnit.Position;
         public Vector3 GetAttackPoint() => buildingUnit.GetAttackPoint();
