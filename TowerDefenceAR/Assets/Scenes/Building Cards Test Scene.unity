@@ -139,45 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &18912083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18912077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 18912079}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-defence-2
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 18912079}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &18912084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18912077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 18912079}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-defence-2
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 18912079}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &18912085
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,44 +174,6 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &106407377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106407372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 106407375}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-obstacle-4
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 106407375}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &106407378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106407372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 106407375}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-obstacle-4
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 106407375}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &106407379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,7 +211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7578371786462311868, guid: 5b17b101e0deaa148810a5dff8b61ad2, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7578371786462311868, guid: 5b17b101e0deaa148810a5dff8b61ad2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -350,45 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &213007659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213007653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 213007655}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-defence-3
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 213007655}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &213007660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213007653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 213007655}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-defence-3
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 213007655}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &213007661
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -423,25 +309,6 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &325625188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325625182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 325625184}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-defence-4
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 325625184}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &325625189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,23 +328,39 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 325625184}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
---- !u!114 &325625190
+--- !u!1 &492265961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1730555233795737687, guid: d771bfbc8677efd4382b5e831c7ec760, type: 3}
+  m_PrefabInstance: {fileID: 7195181464374367862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &492265964 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6546441004765916538, guid: d771bfbc8677efd4382b5e831c7ec760, type: 3}
+  m_PrefabInstance: {fileID: 7195181464374367862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492265961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &492265965
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325625182}
+  m_GameObject: {fileID: 492265961}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 325625184}
+  mObserverBehaviour: {fileID: 492265964}
   mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-defence-4
+  mTargetName: image-target-table
   mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 325625184}
+  mCastedBehaviour: {fileID: 492265964}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
 --- !u!1001 &503857926
@@ -498,7 +381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6003131653000971268, guid: 2e9c06880434eca44a17438597ec5316, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6003131653000971268, guid: 2e9c06880434eca44a17438597ec5316, type: 3}
       propertyPath: m_LocalPosition.x
@@ -580,44 +463,6 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 697806871}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
---- !u!114 &697806876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697806869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 697806871}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-obstacle-1
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 697806871}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &697806877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697806869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 697806871}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-obstacle-1
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 697806871}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1 &1443288601 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2057605118875020710, guid: 8d2d8b688ee14c743a57c323cacd905f, type: 3}
@@ -634,45 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1443288607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1443288601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1443288603}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-defence-1
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 1443288603}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1443288608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1443288601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1443288603}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-defence-1
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 1443288603}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1443288609
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -783,7 +590,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1477265459 stripped
 GameObject:
@@ -802,44 +609,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1477265464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477265459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1477265460}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-obstacle-3
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 1477265460}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1477265465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477265459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1477265460}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-obstacle-3
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 1477265460}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1477265466
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -893,44 +662,6 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1507233439}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
---- !u!114 &1507233444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507233438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1507233439}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-obstacle-2
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 1507233439}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1507233445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507233438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1507233439}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-obstacle-2
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 1507233439}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1 &1530201853 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1529013558944256457, guid: a5a5a758fef075b479ffc7f04bd230d7, type: 3}
@@ -966,44 +697,6 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1530201855}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
---- !u!114 &1530201860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1530201853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1530201855}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-spawn-point
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 1530201855}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1530201861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1530201853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1530201855}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-spawn-point
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 1530201855}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1 &1953941527 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5058234646101845747, guid: 1711cfe2d06701e419d02c2baf531195, type: 3}
@@ -1020,44 +713,6 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1953941532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1953941527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1953941530}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-tower
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 1953941530}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1953941533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1953941527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1953941530}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: image-target-tower
-  mDatasetName: Vuforia/TowerDefence.xml
-  mCastedBehaviour: {fileID: 1953941530}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1953941534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1103,7 +758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3315692671037594835, guid: 0ad7951f3d453434b84368cb659d51ca, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7067770688487145759, guid: 0ad7951f3d453434b84368cb659d51ca, type: 3}
       propertyPath: m_RootOrder
@@ -1169,12 +824,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6680839561162168292, guid: 0ad7951f3d453434b84368cb659d51ca, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 106407377}
-    - targetCorrespondingSourceObject: {fileID: 6680839561162168292, guid: 0ad7951f3d453434b84368cb659d51ca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 106407378}
-    - targetCorrespondingSourceObject: {fileID: 6680839561162168292, guid: 0ad7951f3d453434b84368cb659d51ca, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 106407379}
   m_SourcePrefab: {fileID: 100100000, guid: 0ad7951f3d453434b84368cb659d51ca, type: 3}
 --- !u!1001 &435284427306466506
@@ -1203,7 +852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6306772251012171194, guid: 9a6790c2169eb8e48821e6940e5083d7, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6306772251012171194, guid: 9a6790c2169eb8e48821e6940e5083d7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1252,14 +901,69 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2680362196657131149, guid: 9a6790c2169eb8e48821e6940e5083d7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 213007659}
-    - targetCorrespondingSourceObject: {fileID: 2680362196657131149, guid: 9a6790c2169eb8e48821e6940e5083d7, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 213007660}
-    - targetCorrespondingSourceObject: {fileID: 2680362196657131149, guid: 9a6790c2169eb8e48821e6940e5083d7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 213007661}
   m_SourcePrefab: {fileID: 100100000, guid: 9a6790c2169eb8e48821e6940e5083d7, type: 3}
+--- !u!1001 &1932345298738090383
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5072756265331303049, guid: 36b7b7eefd5550e45bb07ae8586d213f, type: 3}
+      propertyPath: m_Name
+      value: UnitManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857177417711439942, guid: 36b7b7eefd5550e45bb07ae8586d213f, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857177417711439942, guid: 36b7b7eefd5550e45bb07ae8586d213f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857177417711439942, guid: 36b7b7eefd5550e45bb07ae8586d213f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857177417711439942, guid: 36b7b7eefd5550e45bb07ae8586d213f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857177417711439942, guid: 36b7b7eefd5550e45bb07ae8586d213f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857177417711439942, guid: 36b7b7eefd5550e45bb07ae8586d213f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857177417711439942, guid: 36b7b7eefd5550e45bb07ae8586d213f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857177417711439942, guid: 36b7b7eefd5550e45bb07ae8586d213f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857177417711439942, guid: 36b7b7eefd5550e45bb07ae8586d213f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857177417711439942, guid: 36b7b7eefd5550e45bb07ae8586d213f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857177417711439942, guid: 36b7b7eefd5550e45bb07ae8586d213f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 36b7b7eefd5550e45bb07ae8586d213f, type: 3}
 --- !u!1001 &3326656219366149321
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1298,7 +1002,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7942867815142221457, guid: 8d2d8b688ee14c743a57c323cacd905f, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7942867815142221457, guid: 8d2d8b688ee14c743a57c323cacd905f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1348,13 +1052,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2057605118875020710, guid: 8d2d8b688ee14c743a57c323cacd905f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1443288607}
-    - targetCorrespondingSourceObject: {fileID: 2057605118875020710, guid: 8d2d8b688ee14c743a57c323cacd905f, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1443288608}
-    - targetCorrespondingSourceObject: {fileID: 2057605118875020710, guid: 8d2d8b688ee14c743a57c323cacd905f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1443288609}
   m_SourcePrefab: {fileID: 100100000, guid: 8d2d8b688ee14c743a57c323cacd905f, type: 3}
 --- !u!1001 &3563558493545717907
 PrefabInstance:
@@ -1382,7 +1080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6467584984558117881, guid: 073494c444ca891419b01622394955f5, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6467584984558117881, guid: 073494c444ca891419b01622394955f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1445,12 +1143,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3131640576974383310, guid: 073494c444ca891419b01622394955f5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1507233443}
-    - targetCorrespondingSourceObject: {fileID: 3131640576974383310, guid: 073494c444ca891419b01622394955f5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1507233444}
-    - targetCorrespondingSourceObject: {fileID: 3131640576974383310, guid: 073494c444ca891419b01622394955f5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1507233445}
   m_SourcePrefab: {fileID: 100100000, guid: 073494c444ca891419b01622394955f5, type: 3}
 --- !u!1001 &4316550014026955222
 PrefabInstance:
@@ -1462,7 +1154,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 995233195700499669, guid: 86b2b499d0a86644d8e576f80d77243d, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 995233195700499669, guid: 86b2b499d0a86644d8e576f80d77243d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1527,13 +1219,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9186058548136312802, guid: 86b2b499d0a86644d8e576f80d77243d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 18912083}
-    - targetCorrespondingSourceObject: {fileID: 9186058548136312802, guid: 86b2b499d0a86644d8e576f80d77243d, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 18912084}
-    - targetCorrespondingSourceObject: {fileID: 9186058548136312802, guid: 86b2b499d0a86644d8e576f80d77243d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 18912085}
   m_SourcePrefab: {fileID: 100100000, guid: 86b2b499d0a86644d8e576f80d77243d, type: 3}
 --- !u!1001 &4619640938231939692
 PrefabInstance:
@@ -1573,7 +1259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7461494259118349054, guid: a5a5a758fef075b479ffc7f04bd230d7, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7461494259118349054, guid: a5a5a758fef075b479ffc7f04bd230d7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1624,12 +1310,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1529013558944256457, guid: a5a5a758fef075b479ffc7f04bd230d7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1530201859}
-    - targetCorrespondingSourceObject: {fileID: 1529013558944256457, guid: a5a5a758fef075b479ffc7f04bd230d7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1530201860}
-    - targetCorrespondingSourceObject: {fileID: 1529013558944256457, guid: a5a5a758fef075b479ffc7f04bd230d7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1530201861}
   m_SourcePrefab: {fileID: 100100000, guid: a5a5a758fef075b479ffc7f04bd230d7, type: 3}
 --- !u!1001 &4620494010390961030
 PrefabInstance:
@@ -1641,7 +1321,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3784955913497226692, guid: 1711cfe2d06701e419d02c2baf531195, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4428894161430776275, guid: 1711cfe2d06701e419d02c2baf531195, type: 3}
       propertyPath: m_Name
@@ -1727,12 +1407,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5058234646101845747, guid: 1711cfe2d06701e419d02c2baf531195, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1953941532}
-    - targetCorrespondingSourceObject: {fileID: 5058234646101845747, guid: 1711cfe2d06701e419d02c2baf531195, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1953941533}
-    - targetCorrespondingSourceObject: {fileID: 5058234646101845747, guid: 1711cfe2d06701e419d02c2baf531195, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1953941534}
   m_SourcePrefab: {fileID: 100100000, guid: 1711cfe2d06701e419d02c2baf531195, type: 3}
 --- !u!1001 &6062077874533314400
@@ -1745,7 +1419,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 944049209166173721, guid: 6ce780a55580c634ea746cc73f9133c9, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 944049209166173721, guid: 6ce780a55580c634ea746cc73f9133c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1824,12 +1498,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9200087700305861934, guid: 6ce780a55580c634ea746cc73f9133c9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1477265464}
-    - targetCorrespondingSourceObject: {fileID: 9200087700305861934, guid: 6ce780a55580c634ea746cc73f9133c9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1477265465}
-    - targetCorrespondingSourceObject: {fileID: 9200087700305861934, guid: 6ce780a55580c634ea746cc73f9133c9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1477265466}
   m_SourcePrefab: {fileID: 100100000, guid: 6ce780a55580c634ea746cc73f9133c9, type: 3}
 --- !u!1001 &7195181464374367862
 PrefabInstance:
@@ -1891,10 +1559,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: AR Tracking Rig
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6156340253089120368, guid: d771bfbc8677efd4382b5e831c7ec760, type: 3}
+    - {fileID: 3529369054612714368, guid: d771bfbc8677efd4382b5e831c7ec760, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1730555233795737687, guid: d771bfbc8677efd4382b5e831c7ec760, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 492265965}
   m_SourcePrefab: {fileID: 100100000, guid: d771bfbc8677efd4382b5e831c7ec760, type: 3}
 --- !u!1001 &8005461813758574782
 PrefabInstance:
@@ -1922,7 +1595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7910217315760817112, guid: 564f2619f64eb9340822220e7444bcf6, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7910217315760817112, guid: 564f2619f64eb9340822220e7444bcf6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1971,13 +1644,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2265896072443070703, guid: 564f2619f64eb9340822220e7444bcf6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 325625188}
-    - targetCorrespondingSourceObject: {fileID: 2265896072443070703, guid: 564f2619f64eb9340822220e7444bcf6, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 325625189}
-    - targetCorrespondingSourceObject: {fileID: 2265896072443070703, guid: 564f2619f64eb9340822220e7444bcf6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 325625190}
   m_SourcePrefab: {fileID: 100100000, guid: 564f2619f64eb9340822220e7444bcf6, type: 3}
 --- !u!1001 &8164765567253386375
 PrefabInstance:
@@ -2001,7 +1668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2807399791903957137, guid: 2bd3cca2e7d01f14b88f326d49d9c4e1, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2807399791903957137, guid: 2bd3cca2e7d01f14b88f326d49d9c4e1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2068,10 +1735,4 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6071217307220028326, guid: 2bd3cca2e7d01f14b88f326d49d9c4e1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 697806875}
-    - targetCorrespondingSourceObject: {fileID: 6071217307220028326, guid: 2bd3cca2e7d01f14b88f326d49d9c4e1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 697806876}
-    - targetCorrespondingSourceObject: {fileID: 6071217307220028326, guid: 2bd3cca2e7d01f14b88f326d49d9c4e1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 697806877}
   m_SourcePrefab: {fileID: 100100000, guid: 2bd3cca2e7d01f14b88f326d49d9c4e1, type: 3}

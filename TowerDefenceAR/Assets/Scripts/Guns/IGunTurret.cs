@@ -8,6 +8,11 @@ namespace Assets.Scripts.Guns
     public interface IGunTurret
     {
         /// <summary>
+        /// Gets the gun.
+        /// </summary>
+        IGun Gun { get; }
+
+        /// <summary>
         /// Sets a target point for the gun turret to rotate the gun tower towards.
         /// </summary>
         /// <param name="targetPoint">

@@ -4,13 +4,15 @@ using UnityEngine.Assertions;
 
 namespace Assets.Scripts.Effects
 {
-    public class SpwanIndicatorHitEffect : BaseHitEffect
+    public class SpawnIndicatorHitEffect : BaseHitEffect
     {
         [SerializeField]
         private GameObject hitIndicatorPrefab;
 
         public override void Trigger(IBullet bullet, Vector3 hitPoint)
         {
+            Assert.IsNotNull(bullet);
+
             Instantiate(hitIndicatorPrefab, hitPoint, Quaternion.identity, transform);
         }
 

@@ -17,6 +17,8 @@ namespace Assets.Scripts.Guns
 
         private Vector3? aimPoint;
 
+        public IGun Gun => gunTower.Gun;
+
         public void AimAt(Vector3? targetPoint)
         {
             aimPoint = targetPoint;

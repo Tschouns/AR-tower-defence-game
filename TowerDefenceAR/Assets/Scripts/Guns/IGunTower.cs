@@ -8,6 +8,11 @@ namespace Assets.Scripts.Guns
     public interface IGunTower
     {
         /// <summary>
+        /// Gets the gun.
+        /// </summary>
+        IGun Gun { get; }
+
+        /// <summary>
         /// Sets a target point for the gun tower to aim the gun at.
         /// </summary>
         /// <param name="targetPoint">

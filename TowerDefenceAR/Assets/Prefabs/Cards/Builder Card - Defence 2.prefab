@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1449694993014259573, guid: 3973b697330e97840927a04801e45fd3, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1449694993014259573, guid: 3973b697330e97840927a04801e45fd3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -87,5 +87,40 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7397990525275190338, guid: 3973b697330e97840927a04801e45fd3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8312721759523935613}
+    - targetCorrespondingSourceObject: {fileID: 7397990525275190338, guid: 3973b697330e97840927a04801e45fd3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7704406805206056712}
   m_SourcePrefab: {fileID: 100100000, guid: 3973b697330e97840927a04801e45fd3, type: 3}
+--- !u!1 &9186058548136312802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7397990525275190338, guid: 3973b697330e97840927a04801e45fd3, type: 3}
+  m_PrefabInstance: {fileID: 1860442650719636384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8312721759523935613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9186058548136312802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764b1d8ea58950845b419a77e013c9e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7704406805206056712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9186058548136312802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7b2d04d8894454382a5ecac9b1f6f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
