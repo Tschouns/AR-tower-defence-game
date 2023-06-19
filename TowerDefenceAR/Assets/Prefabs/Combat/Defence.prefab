@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 6367083996268825351}
   - component: {fileID: 9031031369354509877}
   - component: {fileID: 5831655300952310437}
-  - component: {fileID: 8462792131199561550}
+  - component: {fileID: 6788663179733526772}
   - component: {fileID: 3012835003518759255}
   - component: {fileID: 5772165508761876327}
   - component: {fileID: 313527586344252019}
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: {fileID: 6367083996268825351}
---- !u!114 &8462792131199561550
+--- !u!114 &6788663179733526772
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -279,10 +279,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7952137540151193219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf4dc7973dfe6894aa64b923bec92695, type: 3}
+  m_Script: {fileID: 11500000, guid: e10fbc14495553649bed6d958d227f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitIndicatorPrefab: {fileID: 1043459744282046865, guid: b797e404c5fa3cc47a355b7d42c3bfbc, type: 3}
 --- !u!114 &3012835003518759255
 MonoBehaviour:
   m_ObjectHideFlags: 0

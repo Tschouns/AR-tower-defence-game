@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5603842742859507441, guid: f882bda7da1efd644ab91161508ab304, type: 3}
+      propertyPath: explosionPrefab
+      value: 
+      objectReference: {fileID: 1605256854473346972, guid: 0351e3abb7c376a4ab87084b547bb828, type: 3}
     - target: {fileID: 5879595797574296250, guid: f882bda7da1efd644ab91161508ab304, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
