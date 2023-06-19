@@ -16,6 +16,9 @@ namespace Assets.Scripts.Building
         [SerializeField]
         private GameObject groundIndicatorPrefab;
 
+        [SerializeField]
+        private float yRotationOffsetDegrees = 180;
+
         private GameTimer timer;
         private GameObject groundIndicator;
 
@@ -89,8 +92,10 @@ namespace Assets.Scripts.Building
             {
                 if (hit.collider.GetComponentInParent<Ground>() != null)
                 {
+                    var yRotation = transform.rotation.eulerAngles.y + yRotationOffsetDegrees;
+
                     buildingPosition = hit.point;
-                    buildingRotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+                    buildingRotation = Quaternion.Euler(0, yRotation, 0);
 
                     // Display at potential building position / rotation.
                     groundIndicator.SetActive(true);
