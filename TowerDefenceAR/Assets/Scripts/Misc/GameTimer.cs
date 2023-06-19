@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts.Helpers
+namespace Assets.Scripts.Misc
 {
     /// <summary>
     /// A timer component which tracks game time.

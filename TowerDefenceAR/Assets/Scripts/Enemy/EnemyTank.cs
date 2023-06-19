@@ -26,9 +26,8 @@ namespace Assets.Scripts.Enemy
         private Vector3? currentTargetOrNull;
         private Vector3 lastPosition;
 
+        public bool IsAlive => health.IsAlive;
         public float AttackRange => attackRange;
-
-        public int AttackPriority => 1;
 
         public Vector3 Position => transform.position;
 
@@ -80,7 +79,11 @@ namespace Assets.Scripts.Enemy
             CorrectMovementToMimicTankDriving();
             gunTurret.AimAt(currentTargetOrNull);
 
-            gun.Shoot();
+            if (currentTargetOrNull.HasValue &&
+                (currentTargetOrNull.Value - Position).magnitude < attackRange * 1.1f)
+            {
+                gun.Shoot();
+            }
         }
 
         private void CorrectMovementToMimicTankDriving()

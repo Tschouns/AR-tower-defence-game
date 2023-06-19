@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5475747222167720145}
   - component: {fileID: 7619712087287531481}
   - component: {fileID: 2120350440425713025}
+  - component: {fileID: -1725293867956500501}
   - component: {fileID: 7895248917817418119}
   m_Layer: 0
   m_Name: Enemy Tank
@@ -56,7 +57,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunTurret: {fileID: 8659637135751548772}
   gun: {fileID: 5284468399995585028}
-  attackRange: 0.4
+  attackRange: 0.6
 --- !u!195 &1098800523023651894
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -91,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4cb7a9b5932a7241800b45a106ed55f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinationIndicator: {fileID: 8344068645240227861}
+  destinationIndicator: {fileID: 0}
 --- !u!114 &5475747222167720145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44dddb8acb060dd4fbe6765e05caa00d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealt: 50
+  maxHealt: 40
 --- !u!114 &7619712087287531481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,6 +131,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: {fileID: 5475747222167720145}
+  energyDamageFactor: 1
+--- !u!114 &-1725293867956500501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3113924606682338121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e10fbc14495553649bed6d958d227f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7895248917817418119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,14 +347,6 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 5475747222167720145}
-    - target: {fileID: 1645918205358041225, guid: 485399ac2cc190c4ab2a38a20163e712, type: 3}
-      propertyPath: healthyModel
-      value: 
-      objectReference: {fileID: 8239465524330363400}
-    - target: {fileID: 1645918205358041225, guid: 485399ac2cc190c4ab2a38a20163e712, type: 3}
-      propertyPath: destroyedModel
-      value: 
-      objectReference: {fileID: 2331185208722134276}
     - target: {fileID: 2487595154177823653, guid: 485399ac2cc190c4ab2a38a20163e712, type: 3}
       propertyPath: m_Name
       value: Gun Turret
@@ -419,6 +425,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8367575941826693453, guid: 485399ac2cc190c4ab2a38a20163e712, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5790717377772192542}
+    - targetCorrespondingSourceObject: {fileID: 5748935949515931812, guid: 485399ac2cc190c4ab2a38a20163e712, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 405242169207432883}
   m_SourcePrefab: {fileID: 100100000, guid: 485399ac2cc190c4ab2a38a20163e712, type: 3}
 --- !u!1 &1985458161615019245 stripped
 GameObject:
@@ -457,6 +466,33 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5748935949515931812, guid: 485399ac2cc190c4ab2a38a20163e712, type: 3}
   m_PrefabInstance: {fileID: 8039587592722306464}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &405242169207432883
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2331185208722134276}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &2354346059173863297 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5710013565524494881, guid: 485399ac2cc190c4ab2a38a20163e712, type: 3}
@@ -581,11 +617,6 @@ MonoBehaviour:
   health: {fileID: 5475747222167720145}
   healthyModel: {fileID: 5060974078618604849}
   destroyedModel: {fileID: 4708185501610748869}
---- !u!1 &8239465524330363400 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2146577017046314920, guid: 485399ac2cc190c4ab2a38a20163e712, type: 3}
-  m_PrefabInstance: {fileID: 8039587592722306464}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8659637135751548772 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1711205447645092548, guid: 485399ac2cc190c4ab2a38a20163e712, type: 3}
@@ -665,10 +696,5 @@ PrefabInstance:
 --- !u!4 &5289894090052401192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3809607161170870700, guid: b797e404c5fa3cc47a355b7d42c3bfbc, type: 3}
-  m_PrefabInstance: {fileID: 9058721419329616260}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8344068645240227861 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1043459744282046865, guid: b797e404c5fa3cc47a355b7d42c3bfbc, type: 3}
   m_PrefabInstance: {fileID: 9058721419329616260}
   m_PrefabAsset: {fileID: 0}

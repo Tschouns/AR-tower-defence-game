@@ -17,6 +17,9 @@ namespace Assets.Scripts.Guns
         private Transform bulletSpawnPoint;
 
         [SerializeField]
+        private ParticleSystem muzzleFlashEffect;
+
+        [SerializeField]
         private float coolDownTime = 3.0f;
 
         public bool IsReady { get; private set; } = true;
@@ -32,6 +35,8 @@ namespace Assets.Scripts.Guns
             bullet.transform.position = bulletSpawnPoint.position;
             bullet.transform.rotation = transform.rotation;
 
+            muzzleFlashEffect.Play();
+
             // Cooldown.
             IsReady = false;
             StartCoroutine(ResetGun());
@@ -40,6 +45,9 @@ namespace Assets.Scripts.Guns
         private void Awake()
         {
             Assert.IsNotNull(bulletPrefab, "The bullet prefab is not set.");
+            Assert.IsNotNull(bulletSpawnPoint, "The bullet spawn point is not set.");
+            Assert.IsNotNull(muzzleFlashEffect, "The muzzle flash effect is not set.");
+
             var bulletComponent = bulletPrefab.GetComponent<Bullet>();
             Assert.IsNotNull(bulletComponent, "The bullet prefab is missing a bullet component.");
         }
