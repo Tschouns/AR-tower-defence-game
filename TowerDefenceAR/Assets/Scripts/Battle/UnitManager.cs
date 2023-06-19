@@ -53,7 +53,7 @@ namespace Assets.Scripts.Battle
 
         private void RemoveDeadUnits(IList<IUnit> units)
         {
-            foreach (var dead in units.Where(u => !u.IsAlive))
+            foreach (var dead in units.Where(u => !u.IsAlive).ToList())
             {
                 units.Remove(dead);
             }
