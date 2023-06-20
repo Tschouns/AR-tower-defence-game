@@ -20,9 +20,6 @@ namespace Game
         [SerializeField]
         private BuilderCard[] obstacleBuilderCards;
 
-        public bool IsStarted => false;
-        public bool IsLost => false;
-
         public bool IsTowerBuilt => towerBuilderCard.HasBuilt;
 
         public bool IsEnemySpawnPointBuilt => enemySpawnPointBuilderCard.HasBuilt;

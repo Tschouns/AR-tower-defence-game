@@ -6,8 +6,6 @@ namespace Assets.Scripts.Game
     /// </summary>
     public interface IGame
     {
-        bool IsStarted { get; }
-        bool IsLost { get; }
         bool IsTowerBuilt { get; }
         bool IsEnemySpawnPointBuilt { get; }
         int DefencesBuilt { get; }
