@@ -1,5 +1,4 @@
-﻿
-namespace Assets.Scripts.Helpers
+﻿namespace Assets.Scripts.Misc
 {
     /// <summary>
     /// Represents a component which measures a game object's current absolute angular velocity.

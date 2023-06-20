@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Assets.Scripts.Helpers
+namespace Assets.Scripts.Misc
 {
     public class VelocityMeter : MonoBehaviour, ILinearVelocityMeter, IAngularVelocityMeter
     {
