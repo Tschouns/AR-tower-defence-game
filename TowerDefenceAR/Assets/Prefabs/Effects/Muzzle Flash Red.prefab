@@ -8,13 +8,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6064570348014610828, guid: 49289a693f2e58743b7579747e48b561, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 0.03
-      objectReference: {fileID: 0}
     - target: {fileID: 6161422141378403633, guid: 49289a693f2e58743b7579747e48b561, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6161422141378403633, guid: 49289a693f2e58743b7579747e48b561, type: 3}
       propertyPath: m_LocalPosition.x
