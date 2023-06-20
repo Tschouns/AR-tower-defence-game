@@ -9,6 +9,11 @@ namespace Assets.Scripts.Battle
     public interface IUnit
     {
         /// <summary>
+        /// Gets the unit's attack range.
+        /// </summary>
+        float AttackRange { get; }
+
+        /// <summary>
         /// Gets a value indicating whether the unit is alive.
         /// </summary>
         bool IsAlive { get; }

@@ -37,17 +37,20 @@ namespace Assets.Scripts.Defence
         {
             var enemies = unitProvider.GetAliveEnemyTanks();
 
-            if (enemies.Any())
+            foreach (var turret in defenceTurrets)
             {
-                for (var i = 0; i < defenceTurrets.Count; i++)
-                {
-                    defenceTurrets[i].AssignAttackTarget(enemies[i % enemies.Count]);
-                }
+                var closestEnemyInRange = enemies
+                    .Where(e => IsInAttackRangeOf(e, turret))
+                    .OrderBy(e => (e.Position - turret.Position).sqrMagnitude)
+                    .FirstOrDefault();
+
+                turret.AssignAttackTarget(closestEnemyInRange);
             }
-            else
-            {
-                defenceTurrets.ForEach(t => t.AssignAttackTarget(null));
-            }
+        }
+
+        private static bool IsInAttackRangeOf(IUnit target, IUnit attacker)
+        {
+            return (target.Position - attacker.Position).sqrMagnitude < (attacker.AttackRange * attacker.AttackRange);
         }
     }
 }

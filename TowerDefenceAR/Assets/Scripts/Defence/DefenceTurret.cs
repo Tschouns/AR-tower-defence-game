@@ -17,8 +17,11 @@ namespace Assets.Scripts.Defence
         private IUnit buildingUnit;
         private IUnit attackTargetUnit;
 
+        public float AttackRange => buildingUnit.AttackRange;
         public bool IsAlive => health.IsAlive;
         public Vector3 Position => buildingUnit.Position;
+
+
         public Vector3 GetAttackPoint() => buildingUnit.GetAttackPoint();
 
         public void AssignAttackTarget(IUnit targetUnit)
@@ -46,7 +49,8 @@ namespace Assets.Scripts.Defence
 
             gunTurret.AimAt(attackTargetUnit?.GetAttackPoint());
 
-            if (attackTargetUnit != null)
+            if (attackTargetUnit != null &&
+                (attackTargetUnit.Position - Position).magnitude < AttackRange * 1.1f)
             {
                 gunTurret.Gun.Shoot();
             }

@@ -129,7 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 6188118759532408613, guid: f882bda7da1efd644ab91161508ab304, type: 3}
   bulletSpawnPoint: {fileID: 2585189876026446658}
-  coolDownTime: 3
+  coolDownTime: 1.5
 --- !u!114 &4782820807818809446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,6 +232,7 @@ MonoBehaviour:
   heightY: 0.1
   widthX: 0.15
   depthZ: 0.15
+  attackRange: 0.5
 --- !u!114 &6367083996268825351
 MonoBehaviour:
   m_ObjectHideFlags: 0

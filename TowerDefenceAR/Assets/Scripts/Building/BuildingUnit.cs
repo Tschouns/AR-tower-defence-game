@@ -17,7 +17,12 @@ namespace Assets.Scripts.Building
         [SerializeField]
         private float depthZ = 0.1f;
 
+        [SerializeField]
+        private float attackRange = 0.5f;
+
         private Health health;
+
+        public float AttackRange => attackRange;
 
         public Vector3 Position => transform.position;
 

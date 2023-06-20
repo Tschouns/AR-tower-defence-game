@@ -79,7 +79,11 @@ namespace Assets.Scripts.Enemy
             CorrectMovementToMimicTankDriving();
             gunTurret.AimAt(currentTargetOrNull);
 
-            gun.Shoot();
+            if (currentTargetOrNull.HasValue &&
+                (currentTargetOrNull.Value - Position).magnitude < attackRange * 1.1f)
+            {
+                gun.Shoot();
+            }
         }
 
         private void CorrectMovementToMimicTankDriving()
