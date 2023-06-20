@@ -14,11 +14,6 @@ namespace Assets.Scripts.Battle
         bool IsAlive { get; }
 
         /// <summary>
-        /// Gets the unit attack priority. Higher means the unit should be attacked first.
-        /// </summary>
-        int AttackPriority { get; }
-
-        /// <summary>
         /// Gets the units position.
         /// </summary>
         Vector3 Position { get; }

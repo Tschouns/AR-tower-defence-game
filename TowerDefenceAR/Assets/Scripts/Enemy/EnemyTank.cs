@@ -29,8 +29,6 @@ namespace Assets.Scripts.Enemy
         public bool IsAlive => health.IsAlive;
         public float AttackRange => attackRange;
 
-        public int AttackPriority => 1;
-
         public Vector3 Position => transform.position;
 
         public Vector3 GetAttackPoint()

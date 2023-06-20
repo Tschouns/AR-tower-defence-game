@@ -19,8 +19,6 @@ namespace Assets.Scripts.Building
 
         private Health health;
 
-        public int AttackPriority => 100;
-
         public Vector3 Position => transform.position;
 
         public bool IsAlive => health.IsAlive;
