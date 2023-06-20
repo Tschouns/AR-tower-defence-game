@@ -270,6 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: {fileID: 6367083996268825351}
+  energyDamageFactor: 1
 --- !u!114 &6788663179733526772
 MonoBehaviour:
   m_ObjectHideFlags: 0

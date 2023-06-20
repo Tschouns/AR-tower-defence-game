@@ -10,7 +10,8 @@ namespace Assets.Scripts.Effects
         [SerializeField]
         private Health health;
 
-        private float energyDamageFactor = 0.1f;
+        [SerializeField]
+        private float energyDamageFactor = 1f;
 
         public override void Trigger(IBullet bullet, Vector3 hitPoint)
         {
