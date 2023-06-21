@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2533809001633821115, guid: d9710a8f88043a24cab71a4af61de758, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60e8f66687adee248a70e0dc37051feb, type: 2}
     - target: {fileID: 4078953310074753759, guid: d9710a8f88043a24cab71a4af61de758, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -56,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6684495247204017957, guid: d9710a8f88043a24cab71a4af61de758, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60e8f66687adee248a70e0dc37051feb, type: 2}
     - target: {fileID: 8501661257543344724, guid: d9710a8f88043a24cab71a4af61de758, type: 3}
       propertyPath: m_Name
       value: Defence Gun Model - Destroyed

@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 235aa806917f2574995dcf0a86f93fce, type: 2}
+    - target: {fileID: 1864741789867555095, guid: 3ae740f73c1d5a5418b41ae0c52b473f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 235aa806917f2574995dcf0a86f93fce, type: 2}
     - target: {fileID: 2547359827387083307, guid: 3ae740f73c1d5a5418b41ae0c52b473f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -72,6 +76,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3909514428652115610, guid: 3ae740f73c1d5a5418b41ae0c52b473f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 235aa806917f2574995dcf0a86f93fce, type: 2}
+    - target: {fileID: 5794441522629926864, guid: 3ae740f73c1d5a5418b41ae0c52b473f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 235aa806917f2574995dcf0a86f93fce, type: 2}
     - target: {fileID: 6249567079253328940, guid: 3ae740f73c1d5a5418b41ae0c52b473f, type: 3}
       propertyPath: m_Name
       value: Enemy Spawn Point Model - Transparent
@@ -80,11 +92,19 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6599767075974049945, guid: 3ae740f73c1d5a5418b41ae0c52b473f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 235aa806917f2574995dcf0a86f93fce, type: 2}
     - target: {fileID: 7738830331795281185, guid: 3ae740f73c1d5a5418b41ae0c52b473f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 235aa806917f2574995dcf0a86f93fce, type: 2}
     - target: {fileID: 7828313529355944362, guid: 3ae740f73c1d5a5418b41ae0c52b473f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 235aa806917f2574995dcf0a86f93fce, type: 2}
+    - target: {fileID: 8245319146016863148, guid: 3ae740f73c1d5a5418b41ae0c52b473f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 235aa806917f2574995dcf0a86f93fce, type: 2}
