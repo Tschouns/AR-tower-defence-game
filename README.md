@@ -4,6 +4,7 @@ A prototype for an AR tabletop tower defence game. Contains the Unity/Vuforia pr
 # Repo Structure
 This repository is structured into sub-directories as follows:
 * TowerDefenceAR: contains the Unity/Vuforia project
+* build: contains an Android build (APK) of the game
 * gimp-images: contains gimp image files used to create the image targets
 * image-targets: contains the image target printout document (PDF), including all the image targets needed to play the game
 
