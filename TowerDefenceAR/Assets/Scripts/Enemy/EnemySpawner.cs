@@ -1,5 +1,5 @@
 using Assets.Scripts.Battle;
-using Assets.Scripts.Helpers;
+using Assets.Scripts.Misc;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -18,9 +18,6 @@ namespace Assets.Scripts.Enemy
         [SerializeField]
         private GameObject enemyPrefab;
 
-        [SerializeField]
-        private GameObject pointIndicator;
-
         private GameTimer spawmTimer;
         private IEnemyUnitRegistry enemyUnitRegistry;
         private IUnitProvider unitProvider;
@@ -29,7 +26,6 @@ namespace Assets.Scripts.Enemy
         {
             Assert.IsNotNull(ememySpawnPoint, "The enemy spawn point is not set.");
             Assert.IsNotNull(enemyPrefab, "The enemy prefab is not set.");
-            Assert.IsNotNull(pointIndicator, "The point indicator prefab was not found.");
 
             var enemyTank = enemyPrefab.GetComponent<EnemyTank>();
             Assert.IsNotNull(enemyTank, "The specified enemy prefab is not valid: no tank component.");
@@ -64,10 +60,13 @@ namespace Assets.Scripts.Enemy
                 Assert.IsNotNull(tank);
                 Assert.IsNotNull(tankCommander);
 
+                tankCommander.Initialize(unitProvider);
+
                 enemies.Add(tank);
                 enemyUnitRegistry.RegisterEnemyUnit(tank);
 
-                var potentialTargets = unitProvider.GetPlayerUnits();
+                // Assign an initial target.
+                var potentialTargets = unitProvider.GetAlivePlayerUnits();
                 if (potentialTargets.Any())
                 {
                     var target = potentialTargets[Random.Range(0, potentialTargets.Count)];
@@ -76,22 +75,6 @@ namespace Assets.Scripts.Enemy
 
                 spawmTimer.Reset();
             }
-        }
-
-        private Vector3 RandomDestination()
-        {
-            return new Vector3(
-                Random.Range(-1f, 1f),
-                0,
-                Random.Range(-1f, 1f));
-        }
-
-        private Vector3 RandomTarget()
-        {
-            return new Vector3(
-                Random.Range(-1f, 1f),
-                Random.Range(0, 0.5f),
-                Random.Range(-1f, 1f));
         }
     }
 }

@@ -8,6 +8,14 @@ namespace Assets.Scripts.Enemy
     public interface IEnemyTankCommander
     {
         /// <summary>
+        /// Initializes the tank commander.
+        /// </summary>
+        /// <param name="unitProvider">
+        /// The unit provider, i.e. access to all units on the battlefield
+        /// </param>
+        void Initialize(IUnitProvider unitProvider);
+
+        /// <summary>
         /// Assigns the tank commander a target unit to attack.
         /// </summary>
         /// <param name="targetUnit">

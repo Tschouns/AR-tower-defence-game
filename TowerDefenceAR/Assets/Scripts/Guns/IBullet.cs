@@ -17,5 +17,10 @@ namespace Assets.Scripts.Guns
         /// Gets the bullet's direction of travel.
         /// </summary>
         Vector3 Direction { get; }
+
+        /// <summary>
+        /// Gets the explosion effect prefab for this bullet.
+        /// </summary>
+        GameObject ExplosionPrefab { get; }
     }
 }

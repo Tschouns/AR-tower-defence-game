@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9040880364787781932}
   - component: {fileID: 8554840938029514773}
   - component: {fileID: 5489029967116091898}
-  - component: {fileID: 7955383422589910738}
+  - component: {fileID: 1443898634405767700}
   m_Layer: 7
   m_Name: Tower
   m_TagString: Untagged
@@ -71,6 +71,7 @@ MonoBehaviour:
   heightY: 0.4
   widthX: 0.15
   depthZ: 0.15
+  attackRange: 0
 --- !u!114 &8850635904240066160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44dddb8acb060dd4fbe6765e05caa00d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealt: 100
+  maxHealt: 1000
 --- !u!114 &9040880364787781932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,7 +125,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: {fileID: 8850635904240066160}
---- !u!114 &7955383422589910738
+  energyDamageFactor: 1
+--- !u!114 &1443898634405767700
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,10 +135,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 952601077114388865}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf4dc7973dfe6894aa64b923bec92695, type: 3}
+  m_Script: {fileID: 11500000, guid: e10fbc14495553649bed6d958d227f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitIndicatorPrefab: {fileID: 1043459744282046865, guid: b797e404c5fa3cc47a355b7d42c3bfbc, type: 3}
 --- !u!1001 &7457563691808150843
 PrefabInstance:
   m_ObjectHideFlags: 0

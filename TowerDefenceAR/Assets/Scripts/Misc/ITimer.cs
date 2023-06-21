@@ -1,4 +1,4 @@
-﻿namespace Assets.Scripts.Helpers
+﻿namespace Assets.Scripts.Misc
 {
     /// <summary>
     /// Represents a timer.

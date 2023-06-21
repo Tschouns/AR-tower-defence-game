@@ -1,4 +1,4 @@
-﻿using Assets.Scripts.Helpers;
+﻿using Assets.Scripts.Misc;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -13,6 +13,9 @@ namespace Assets.Scripts.Guns
         [SerializeField]
         private float energy = 10f;
 
+        [SerializeField]
+        private GameObject explosionPrefab;
+
         private ITimer timer;
 
         public bool IsActive => gameObject.activeSelf;
@@ -20,6 +23,8 @@ namespace Assets.Scripts.Guns
         public float Energy => energy;
 
         public Vector3 Direction => transform.forward;
+
+        public GameObject ExplosionPrefab => explosionPrefab;
 
         public void Activate()
         {
@@ -29,6 +34,8 @@ namespace Assets.Scripts.Guns
 
         private void Awake()
         {
+            Assert.IsNotNull(explosionPrefab, "The explosion prefab is not set.");
+
             timer = GetComponent<ITimer>();
             Assert.IsNotNull("The game timer component is missing.");
         }
