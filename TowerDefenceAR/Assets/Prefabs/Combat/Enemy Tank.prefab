@@ -57,7 +57,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunTurret: {fileID: 8659637135751548772}
   gun: {fileID: 5284468399995585028}
-  attackRange: 0.4
+  attackRange: 0.5
 --- !u!195 &1098800523023651894
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4cb7a9b5932a7241800b45a106ed55f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinationIndicator: {fileID: 8344068645240227861}
+  destinationIndicator: {fileID: 0}
 --- !u!114 &5475747222167720145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,10 +696,5 @@ PrefabInstance:
 --- !u!4 &5289894090052401192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3809607161170870700, guid: b797e404c5fa3cc47a355b7d42c3bfbc, type: 3}
-  m_PrefabInstance: {fileID: 9058721419329616260}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8344068645240227861 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1043459744282046865, guid: b797e404c5fa3cc47a355b7d42c3bfbc, type: 3}
   m_PrefabInstance: {fileID: 9058721419329616260}
   m_PrefabAsset: {fileID: 0}

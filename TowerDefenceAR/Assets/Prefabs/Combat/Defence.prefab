@@ -234,7 +234,7 @@ MonoBehaviour:
   heightY: 0.1
   widthX: 0.15
   depthZ: 0.15
-  attackRange: 0.5
+  attackRange: 0.7
 --- !u!114 &6367083996268825351
 MonoBehaviour:
   m_ObjectHideFlags: 0
