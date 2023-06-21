@@ -64,9 +64,12 @@ namespace Assets.Scripts.Enemy
                 Assert.IsNotNull(tank);
                 Assert.IsNotNull(tankCommander);
 
+                tankCommander.Initialize(unitProvider);
+
                 enemies.Add(tank);
                 enemyUnitRegistry.RegisterEnemyUnit(tank);
 
+                // Assign an initial target.
                 var potentialTargets = unitProvider.GetAlivePlayerUnits();
                 if (potentialTargets.Any())
                 {

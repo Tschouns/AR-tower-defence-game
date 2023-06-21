@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Battle;
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -12,8 +13,14 @@ namespace Assets.Scripts.Enemy
         private GameObject destinationIndicator;
 
         private IEnemyTank tank;
+        private IUnitProvider unitProvider;
         private IUnit attackTargetUnit;
         private bool needNewDestination = false;
+
+        public void Initialize(IUnitProvider unitProvider)
+        {
+            this.unitProvider = unitProvider;
+        }
 
         public void AssignAttackTarget(IUnit targetUnit)
         {
@@ -28,8 +35,19 @@ namespace Assets.Scripts.Enemy
             needNewDestination = true;
         }
 
+        private void Start()
+        {
+            Assert.IsNotNull(unitProvider);
+        }
+
         private void Update()
         {
+            if (attackTargetUnit == null ||
+                !attackTargetUnit.IsAlive)
+            {
+                SelectNewAttackTarget();
+            }
+
             if (attackTargetUnit != null && needNewDestination)
             {
                 // Determine destination.
@@ -54,6 +72,18 @@ namespace Assets.Scripts.Enemy
                 var timeToRelocate = Random.Range(3f, 15f);
                 StartCoroutine(ChangePositionAfter(timeToRelocate));
             }
+        }
+
+        private void SelectNewAttackTarget()
+        {
+            var units = unitProvider.GetAlivePlayerUnits();
+            if (!units.Any())
+            {
+                return;
+            }
+
+            attackTargetUnit = units[Random.Range(0, units.Count)];
+            needNewDestination = true;
         }
 
         private IEnumerator ChangePositionAfter(float seconds)
