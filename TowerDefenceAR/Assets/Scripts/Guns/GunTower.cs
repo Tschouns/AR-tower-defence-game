@@ -27,8 +27,8 @@ namespace Assets.Scripts.Guns
 
         private void Update()
         {
+            // Cheap, crappy implementation...
             var targetElevation = CalcTargetElevationAngle();
-
             gun.transform.localRotation = Quaternion.Euler(targetElevation, 0, 0);
         }
 
