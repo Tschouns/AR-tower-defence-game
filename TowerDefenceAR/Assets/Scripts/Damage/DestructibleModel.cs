@@ -7,7 +7,7 @@ namespace Assets.Scripts.Damage
     /// Replaces a "healthy" model by "destroyed" model when the object dies / gets destroyed.
     /// </summary>
     [RequireComponent(typeof(Health))]
-    public class DestructableModel : MonoBehaviour
+    public class DestructibleModel : MonoBehaviour
     {
         [SerializeField]
         private Health health;
