@@ -57,7 +57,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunTurret: {fileID: 8659637135751548772}
   gun: {fileID: 5284468399995585028}
-  attackRange: 0.5
+  attackRange: 0.6
 --- !u!195 &1098800523023651894
 NavMeshAgent:
   m_ObjectHideFlags: 0
