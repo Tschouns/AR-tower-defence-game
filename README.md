@@ -1,6 +1,8 @@
 # AR-tower-defence-game
 A prototype for an AR tabletop tower defence game. Contains the Unity/Vuforia project.
 
+Here's a demo video: https://youtu.be/Ud6hoyodKFk
+
 # Repo Structure
 This repository is structured into subfolders as follows:
 * _TowerDefenceAR_: contains the Unity/Vuforia project
